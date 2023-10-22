@@ -1,0 +1,32 @@
+@import '@/assets/styles/bases/variables';
+@import '@/assets/styles/bases/effect';
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid $primary;
+    border-left-color: transparent;
+    // border-right-color: transparent;
+    animation: rotation 1s infinite linear;
+  }
+
+  &.small {
+    &::after {
+      width: 25px;
+      height: 25px;
+      border: 4px solid $primary;
+      border-left-color: $primary;
+      border-right-color: $primary;
+    }
+  }
+}

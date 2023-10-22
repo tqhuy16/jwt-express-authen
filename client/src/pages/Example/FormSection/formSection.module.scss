@@ -1,0 +1,32 @@
+.wrapFieldGroup {
+  display: flex;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  .fieldGroup {
+    flex: 1;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    > * {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.actionBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

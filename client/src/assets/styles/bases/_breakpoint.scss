@@ -1,0 +1,43 @@
+@mixin media-query($breakpoint) {
+  // Mobile M
+  @if $breakpoint == xs {
+    @media only screen and (max-width: 479px) {
+      @content;
+    }
+  }
+
+  // Mobile L
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 575px) {
+      @content;
+    }
+  }
+
+  // TABLET M
+  @if $breakpoint == md {
+    @media only screen and (max-width: 767) {
+      @content;
+    }
+  }
+
+  // TABLET L
+  @if $breakpoint == lg {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  // DESKTOP M
+  @if $breakpoint == xl {
+    @media only screen and (max-width: 1199) {
+      @content;
+    }
+  }
+
+  // DESKTOP L
+  @if $breakpoint == xxl {
+    @media only screen and (max-width: 1599px) {
+      @content;
+    }
+  }
+}

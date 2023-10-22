@@ -1,0 +1,37 @@
+@import '@/assets/styles/bases/breakpoint';
+
+.container {
+  max-width: 1140px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  .containerContent {
+    padding: 30px 0;
+  }
+}
+
+@include media-query(sm) {
+  .container {
+    max-width: initial;
+  }
+}
+
+@include media-query(md) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@include media-query(lg) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@include media-query(xl) {
+  .container {
+    max-width: 960px;
+  }
+}

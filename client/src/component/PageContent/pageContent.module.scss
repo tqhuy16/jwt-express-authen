@@ -1,0 +1,10 @@
+@import '@/assets/styles/bases/variables';
+
+.pageContent {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-color: #f3f5f7;
+  flex: 1;
+  min-width: 0;
+}

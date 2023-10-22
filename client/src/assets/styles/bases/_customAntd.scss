@@ -1,0 +1,205 @@
+@import '@/assets/styles/bases/variables';
+
+//css for Toast
+.ant-message {
+  .ant-message-notice {
+    .ant-message-notice-content {
+      background-color: $yellow-200;
+      border-radius: 4px;
+
+      .ant-message-custom-content {
+        span {
+          color: $white;
+        }
+      }
+    }
+
+    &.ant-custom-error {
+      .ant-message-notice-content {
+        background-color: $red-100;
+
+        .ant-message-custom-content {
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &.ant-custom-warning {
+      .ant-message-notice-content {
+        background-color: $orange-200;
+
+        .ant-message-custom-content {
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+//css for Modal
+.ant-modal-content {
+  .ant-modal-footer {
+    .ant-btn-default,
+    .ant-btn-primary {
+      background-color: $primary;
+      color: $white;
+      border-color: $primary;
+
+      &:hover {
+        opacity: 0.9;
+        color: $white !important;
+        border-color: $primary !important;
+        background-color: $primary !important;
+      }
+    }
+  }
+}
+
+//css for Image Table
+.img-table-ant {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+//css for Page Active
+.ant-pagination-item-active {
+  border-color: $primary !important;
+
+  a {
+    color: $primary !important;
+  }
+
+  &:hover {
+    border-color: $primary !important;
+  }
+}
+
+//css for Select Page Size
+.ant-select-selector {
+  &:hover {
+    border-color: $primary !important;
+  }
+}
+
+.ant-select-focused {
+  .ant-select-selector {
+    border-color: $primary !important;
+  }
+}
+
+//css for Radio
+.ant-radio-wrapper {
+  &:hover {
+    .ant-radio-inner {
+      border-color: $primary !important;
+    }
+  }
+
+  .ant-radio-checked {
+    .ant-radio-inner {
+      border-color: $primary !important;
+      background-color: $primary !important;
+    }
+  }
+}
+
+//css for Select
+
+//css for DatePicker
+.ant-space {
+  width: 100%;
+
+  .ant-space-item {
+    .ant-picker {
+      width: 100%;
+
+      &:hover {
+        border-color: $primary !important;
+      }
+
+      &.ant-picker-focused {
+        border-color: $primary !important;
+      }
+    }
+  }
+}
+
+.ant-picker-header {
+  .ant-picker-month-btn,
+  .ant-picker-year-btn {
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+.ant-picker-body {
+  .ant-picker-cell {
+    .ant-picker-cell-inner {
+      &::before {
+        border-color: $primary !important;
+      }
+    }
+
+    &.ant-picker-cell-selected {
+      .ant-picker-cell-inner {
+        background: $primary !important;
+      }
+    }
+  }
+}
+
+.ant-picker-footer {
+  .ant-picker-today-btn {
+    color: $primary !important;
+  }
+}
+
+//css for Checkbox
+.ant-checkbox-wrapper {
+  &:hover {
+    .ant-checkbox-inner {
+      border-color: $primary !important;
+    }
+  }
+
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background-color: $primary !important;
+      border-color: $primary !important;
+    }
+  }
+}
+
+//css for Jumper To Page
+.ant-pagination-options-quick-jumper {
+  input {
+    &:hover,
+    &:focus {
+      border-color: $primary !important;
+    }
+  }
+}
+
+.ant-popover-content {
+  .ant-popover-inner {
+    .ant-popover-inner-content {
+      a {
+        color: $primary;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

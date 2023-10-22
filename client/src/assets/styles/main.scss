@@ -1,0 +1,12 @@
+// Sass variables
+@import './bases/variables.scss';
+
+// Base styles
+@import './bases/fonts.scss';
+@import './bases/breakpoint.scss';
+
+// Custom Antd
+@import './bases/customAntd.scss';
+
+// Global styles
+@import './bases/global.scss';

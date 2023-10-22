@@ -1,0 +1,37 @@
+{
+  "env": {
+      "browser": true,
+      "node": true
+    },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+],
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    /*
+      "off" hoặc 0 - tắt rule
+      "warn" hoặc 1 - bật rule ở chế độ warning
+      "error" hoặc 2 - bật rule ở chế độ báo lỗi
+    */
+    "indent": ["error", 2],
+    "no-console": "warn",
+    "prettier/prettier": ["error"], // thông báo lỗi code ko match với .prettierrc
+    "@typescript-eslint/no-explicit-any": "off", // cho phép type any
+    "@typescript-eslint/no-empty-interface": "off", //cho phép empty Interface
+    "@typescript-eslint/explicit-module-boundary-types": "off", // không cần kiểu trả về của Function
+    "react/react-in-jsx-scope": "off" // không cần import React from 'react'
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

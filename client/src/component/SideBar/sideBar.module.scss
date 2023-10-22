@@ -1,0 +1,44 @@
+@import '@/assets/styles/bases/variables';
+
+.wrapSideBar {
+  width: 0;
+  box-shadow: 4px 0 22px 0 rgba(0, 0, 0, 0.07);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: width 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &.open {
+    width: 300px;
+  }
+
+  .surfingBox {
+    width: 300px;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+
+      .menuItem {
+        padding: 15px;
+        color: $black;
+        margin-bottom: 5px;
+        transition: background-color 0.2s;
+        text-decoration: none;
+
+        &.active {
+          background-color: $primary-100;
+          color: $white;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

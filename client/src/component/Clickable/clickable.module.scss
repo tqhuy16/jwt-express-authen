@@ -1,0 +1,14 @@
+.clickable {
+  cursor: pointer;
+  user-select: none;
+  transition: filter 0.2s ease;
+  display: block;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    filter: brightness(0.8);
+  }
+}

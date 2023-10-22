@@ -1,0 +1,56 @@
+@import '@/assets/styles/bases/variables';
+
+.typography {
+  text-align: 'left';
+  font-weight: 'normal';
+  font-size: 14px;
+
+  &.tiny {
+    font-size: 10px;
+  }
+
+  &.small {
+    font-size: 12px;
+  }
+
+  &.large {
+    font-size: 16px;
+  }
+
+  &.big {
+    font-size: 18px;
+  }
+
+  &.huge {
+    font-size: 20px;
+  }
+
+  &.giant {
+    font-size: 30px;
+  }
+
+  &.enormous {
+    font-size: 40px;
+  }
+
+  &.link {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &.underline {
+    text-decoration: underline;
+  }
+
+  &.primary {
+    color: $primary;
+  }
+
+  &.secondary {
+    color: #a7a7a7;
+  }
+
+  &.center {
+    text-align: center;
+  }
+}

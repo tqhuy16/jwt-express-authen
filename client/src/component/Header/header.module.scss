@@ -1,0 +1,98 @@
+@import '@/assets/styles/bases/variables';
+
+.headerContainer {
+  height: 60px;
+  color: $white;
+  display: flex;
+  background-color: $primary;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .leftBox {
+      display: flex;
+      align-items: center;
+
+      .menuButton {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+          height: 2px;
+          width: 100%;
+          background-color: $white;
+        }
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+    }
+
+    .rightBox {
+      display: flex;
+      align-items: center;
+
+      .userBox {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        cursor: pointer;
+        user-select: none;
+
+        .avatar {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+
+        .name {
+          font-size: 16px;
+          letter-spacing: 0.21px;
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+
+        .anticon {
+          font-size: 12px;
+        }
+      }
+
+      .languageBox {
+        display: flex;
+
+        .languageButton {
+          margin-left: 10px;
+          border: 1px solid $white;
+          width: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          padding-top: 2px;
+          transition: color 0.2s, background-color 0.2s;
+
+          &.active {
+            background-color: $white;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

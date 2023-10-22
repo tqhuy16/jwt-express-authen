@@ -1,0 +1,87 @@
+@import '@/assets/styles/bases/variables';
+
+@mixin image-size {
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.label {
+  margin-bottom: 6px;
+}
+
+.groupImagesUpload {
+  display: flex;
+  flex-wrap: wrap;
+
+  .imagePreview {
+    @include image-size;
+    margin: 5px 5px 0px 0px;
+    position: relative;
+
+    &:hover {
+      img {
+        opacity: 0.3;
+      }
+
+      .customDelete {
+        opacity: 1;
+      }
+    }
+
+    .customDelete {
+      z-index: 1;
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+
+      .textDelete {
+        background-color: $red-100;
+        color: $white;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .inputImage {
+    display: none;
+  }
+
+  .buttonUpload {
+    @include image-size;
+    margin: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #d9d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.02);
+
+    &.imageError {
+      border-color: $red-100;
+      color: $red-100;
+    }
+
+    .textUpload {
+      text-align: center;
+    }
+
+    &:hover {
+      border: 1px dashed $primary;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "en": {
+    "common": {
+      "header": {
+        "title": "React JS Boilerplate",
+        "hello": "Hello {{userName}}",
+        "logout": "Logout"
+      },
+      "side_bar": {
+        "home": "Home",
+        "examples": "Examples",
+        "redux": "Redux"
+      }
+    }
+  },
+
+  "vi": {
+    "common": {
+      "header": {
+        "title": "Bản mẫu React JS",
+        "hello": "Xin chào {{userName}}",
+        "logout": "Đăng xuất"
+      },
+      "side_bar": {
+        "home": "Trang chủ",
+        "examples": "Các ví dụ",
+        "redux": "Quản lí state"
+      }
+    }
+  }
+}

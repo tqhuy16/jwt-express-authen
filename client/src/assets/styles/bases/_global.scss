@@ -1,0 +1,130 @@
+@import '@/assets/styles/bases/effect';
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color: #000;
+  font-size: 15px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.preloading {
+  background: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  .circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    &::after {
+      content: '';
+      background-color: #388e3c;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      animation: rotate 2s infinite;
+    }
+
+    &::before {
+      content: '';
+      background-color: #388e3c;
+      opacity: 0.5;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      animation: revert-rotate 2s infinite;
+    }
+  }
+}
+
+.application {
+  width: 100%;
+  height: 100%;
+}
+
+.text-error {
+  font-size: 12px;
+  color: red;
+}
+
+.required-field {
+  position: relative;
+  color: $red-100;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+// Example Page
+.example-section {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .section-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .section-body {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+
+    .wrap-button {
+      display: flex;
+
+      > * {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// .style-scrollbar {
+//   &::-webkit-scrollbar {
+//     width: 7px;
+//   }
+
+//   &::-webkit-scrollbar-track {
+//     background: transparent;
+//   }
+
+//   &::-webkit-scrollbar-thumb {
+//     background-color: #6e6e6e;
+//     border-radius: 10px;
+
+//     &:hover {
+//       background-color: #9a9a9a;
+//     }
+//   }
+// }
